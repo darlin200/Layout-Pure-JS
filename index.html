@@ -1,0 +1,327 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>The Main Page</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Контейнер для бэкграунда, что существует на сайте  -->
+    <div class="wrapper-background">
+    </div>
+    <div id="search-form-wrapper">
+        <div id="search-form">
+            <input type="text" placeholder="Пошук" id="search-long">
+            <div id="close-search">
+                <img src="./src/heart-pack/Shape Copy.svg" alt="" />
+            </div>
+        </div>
+        <div id="search-form-suggestion">
+            <div class="search-form-main-suggestion">
+                <!-- <div class="element-suggestion"> <a href="projects.html">Проекти</a></div>-->
+                <!--  <div class="element-suggestion"><a href="archieve.html">Архів </a> </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Контейнер для обхвата всей шапки -->
+    <header class="header">
+        <!-- Блок Логотип -->
+        <div class="logo">
+            <a href="./index.html"><img src="./src/logo.svg" alt="" /></a>
+        </div>
+        <!-- Блок языков -->
+        <div class="languages">
+
+            <div class="lang">
+                <a>УКР</a>
+            </div>
+            <div class="lang">
+                <a>РУС </a>
+            </div>
+            <div class="lang">
+                <a>EN</a>
+            </div>
+        </div>
+        <!-- Панель навигации -->
+        <div class="topbar">
+            <div class="element"> <a href="projects.html">Проекти</a></div>
+            <div class="element"><a href="archieve.html">Архів </a> </div>
+            <div class="element"><a href="contacts.html">Контакти</a></div>
+            <div class="element" id="fast-help"> <a href="fast-help.html">Термінова допомога</a></div>
+        </div>
+        <!--Поиск -->
+        <div class="search">
+            <img id="search-button" src="./src/Search-button.svg" />
+        </div>
+        <!-- Авторизация -->
+        <div class="login">
+            <a href="#">Увійти</a>
+            <a href="#">/ Зареєструватись</a>
+        </div>
+    </header>
+
+    <div class="main-content-wrapper">
+        <div id="text-wrapper">
+            <div class="main-text">
+                <p>Добре Серце</p>
+            </div>
+            <div class="about-text">
+                <a href="#">детальніше про проект</a>
+                <img class="next-button" src="./src/buttonNext.svg" alt="" />
+            </div>
+
+        </div>
+        <div class="text-slogan">
+            <img class="white-line" src="./src/white-line.svg" alt="" />
+            <p class="text-under-white-line"> Вже зараз Ви можете допомогти тим, хто дійсно</br>потребує допомоги</p>
+            <div class="wrapper-text-underline">
+                <p class="text-under-white-line-under">Як Ви можете допомогти? </p>
+                <img class="next-button-two" src="./src/buttonNext.svg" />
+                <div class="wrapper-button-class">
+                    <div id="text-slogan-button-help-now">
+                        <a href="#">Домопомогти вже зараз</a>
+                    </div>
+                </div>
+            </div>
+            <div class="adding-to-project">
+                <div class="adding-to-project-string">
+                    <img class="white-line" src="./src/white-line.svg" alt="" />
+                    <p class="string-adding-to-project">Якщо Вам необхідна допомога, додайте проект</p>
+                    <div>Додати проект <img class="plus" src="./src/plus.svg"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-page">
+            <p class="text-footer-page">Розповісти всім: </p>
+            <div class="images-footer-page">
+                <img src="./src/twitter.svg" />
+                <img src="./src/facebook.svg" />
+                <img src="./src/vk.svg" />
+            </div>
+        </div>
+        <div class="hearts">
+            <img class="heart" id="all-png" src="./src/heart-pack/new-test.svg" alt="" />
+        </div>
+        <img id="message-image" src="./src/massage.svg" alt="" />
+    </div>
+
+
+
+
+
+    <div id="modal" id="my-modal">
+        <div id="modal-content">
+            <span class="close">&times;</span>
+            <div class="main-phrase">
+                <p>Заповніть Форму</p>
+            </div>
+            <div class="form-type-of">
+                <button class="type-of-human" id="first-type-of-human">
+                 Фіз.Особа
+             </button>
+                <button class="type-of-human" id="second-type-of-human">
+                 Юр.Особа
+                </button>
+            </div>
+            <!--Формы -->
+            <div class="table-of-form">
+                <!--Физ  Формы-->
+                <div id="table-first">
+                    <!--Левая часть Физ Формы-->
+                    <div class="left-form" class="table-of-form-people">
+                        <div class="flex-label">
+                            <label> Ім'я</label>
+                            <label class="label-2"> Фамілія</label>
+                        </div>
+                        <div class="first-stirng-of-form">
+                            <input type="text" placeholder="" class="input-1">
+                            <input type="text" placeholder="" class="input-2">
+                        </div>
+
+
+                        <label> Назва компаніі, організації</label><input type="text" placeholder="" class="input-3">
+
+
+
+                        <label> Email-адрес</label><input type="text" placeholder="" class="input-4">
+
+
+
+                        <label> Номер телефону</label><input type="text" placeholder="" class="input-5">
+
+                    </div>
+                    <!--Правая часть Физ Формы-->
+                    <div class="right-form" class="table-of-form-people">
+                        <label> Ім'я</label>
+                        <input type="text" placeholder="" class="right-input-1">
+                        <div class="flex-label">
+                            <label> Ім'я</label>
+                            <label class="label-2"> Фамілія</label>
+                        </div>
+                        <div class="second-stirng-of-right-form"> <input type="text" placeholder="" class="right-input-2">
+                            <input type="text" placeholder="" class="right-input-3"></div>
+                        <label> Назва компаніі, організації</label>
+                        <input type="text" placeholder="" class="right-input-4">
+                        <label> Назва компаніі, організації</label>
+                        <input type="text" placeholder="" class="right-input-5">
+                    </div>
+                </div>
+                <!-- Юр Формы-->
+                <div id="table-second">
+                    <!--Левая часть Юр Формы-->
+                    <div class="left-form-of-second-table" class="second-table-of-form-people">
+                        <div class="flex-label">
+                            <label> Ім'я</label>
+                            <label class="label-2"> Фамілія</label>
+                        </div>
+                        <div class="half-stirng-of-second-form">
+                            <input type="text" placeholder="" class="left-input-1-of-second-form">
+                            <input type="text" placeholder="" class="left-input-2-of-second-form">
+                        </div>
+                        <label> Назва компаніі, організації</label>
+                        <input type="text" placeholder="" class="left-input-3-of-second-form">
+                        <label>Email-адрес</label>
+                        <input type="text" placeholder="" class="left-input-4-of-second-form">
+                        <label> Номер телефону</label>
+                        <input type="text" placeholder="" class="left-input-5-of-second-form">
+                        <label> Юридична адреса</label>
+                        <input type="text" placeholder="" class="left-input-6-of-second-form">
+                        <div class="flex-label">
+                            <label> Найменування банку</label>
+                            <label class="label-2-yur-form"> МФО банку</label>
+                        </div>
+                        <div class="half-stirng-of-second-form">
+                            <input type="text" placeholder="" class="left-input-7-of-second-form">
+                            <input type="text" placeholder="" class="left-input-8-of-second-form">
+                        </div>
+                        <label> Розрахунковий рахунок</label>
+                        <input type="text" placeholder="" class="left-input-9-of-second-form">
+                    </div>
+                    <!--Правая часть Юр Формы-->
+                    <div class="right-form-of-second-table" class="second-table-of-form-people">
+                        <label>Країна</label>
+                        <input type="text" placeholder="" class="right-input-1-of-second-form">
+                        <div class="flex-label">
+                            <label> Місто</label>
+                            <label class="label-3-yur-form"> Штат, район</label>
+                        </div>
+                        <div class="half-stirng-of-second-form">
+                            <input type="text" placeholder="" class="right-input-2-of-second-form">
+                            <input type="text" placeholder="" class="right-input-3-of-second-form">
+                        </div>
+                        <label> Адреса</label>
+                        <input type="text" placeholder="" class="right-input-4-of-second-form">
+                        <label>Поштовий індекс</label>
+                        <input type="text" placeholder="" class="right-input-5-of-second-form">
+                        <div class="flex-label">
+                            <label> ЗКПО</label>
+                            <label class="label-4-yur-form"> Тип оподаткування</label>
+                        </div>
+                        <div class="half-stirng-of-second-form">
+                            <input type="text" placeholder="" class="right-input-6-of-second-form">
+                            <input type="text" placeholder="" class="right-input-7-of-second-form">
+                        </div>
+                        <div class="flex-label">
+                            <label> ІНН</label>
+                            <label class="label-5-yur-form"> Система оподаткування</label>
+                        </div>
+                        <div class="half-stirng-of-second-form">
+                            <input type="text" placeholder="" class="right-input-8-of-second-form">
+                            <input type="text" placeholder="" class="right-input-9-of-second-form">
+                        </div>
+                        <div class="flex-label">
+                            <label> Телефон бугалтерії</label>
+                            <label class="label-6-yur-form"> Факс</label>
+                        </div>
+                        <div class="half-stirng-of-second-form">
+                            <input type="text" placeholder="" class="right-input-10-of-second-form">
+                            <input type="text" placeholder="" class="right-input-11-of-second-form">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-phrase">
+                <p>Види допомоги</p>
+            </div>
+            <p class="text-under-main-phrase"> Ви можете змінити вид допомоги</p>
+            <div class="type-of-help">
+                <div class="type-of-help-element">
+                    <img src="src/type-of-help-hand.svg" alt="">
+                    <p class="int">Зробити</p>
+                </div>
+                <div class="type-of-help-element">
+                    <img src="src/type-of-help-wallet.svg" alt="">
+                    <p class="int">Фінансова <br> Допомога</p>
+                </div>
+                <div class="type-of-help-element">
+                    <img src="src/type-of-help-stuf.svg" alt="">
+                    <p class="int">Матеріальна <br> допомога</p>
+                </div>
+                <div class="type-of-help-element">
+                    <img src="src/type-of-help-heart.svg" alt="">
+                    <p class="int">Волонтерство</p>
+                </div>
+            </div>
+            <div class="type-of-pay">
+                <div class="left-type-of-help">
+                    <div class="first-line-left-type-of-help">
+                        <img src="src/card-1.svg" alt="">
+                        <img src="src/card-2-active.svg" alt="">
+                        <img src="src/card-3.svg" alt="">
+                    </div>
+                    <div class="second-type-left-type-of-help">
+                        <img src="src/card-4.svg" alt="">
+                        <img src="src/card-5.svg" alt="">
+                        <img src="src/card-6.png" alt="">
+                    </div>
+                </div>
+                <div class="right-type-of-help">
+                    <img src="src/huge-card.svg" alt="">
+                </div>
+            </div>
+            <div class="button-help">
+                <div class="child-button-help-class">
+                    <a href="#"> Допомогти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Моя реализация табов через модальные окна 
+    <div id="modal-2" id="my-modal-2">
+        <div id="modal-content-2">
+            <span class="close-2">&times;</span>
+            <div class="main-phrase">
+                <p>Заповніть Форму</p>
+            </div>
+            <div class="form-type-of">
+                <button class="type-of-human" id="first-first-type-of-human">
+                     Фіз.Особа
+                 </button>
+                <button class="type-of-human" id="second-second-type-of-human">
+                     Юр.Особа
+                    </button>
+            </div>
+            <div class="table-of-form">
+                <div class="left-form" class="table-of-form-people">
+
+                    <div class="first-stirng-of-form"> <input type="text" placeholder="" class="input-1">
+                        <input type="text" placeholder="" class="input-2"></div>
+
+                </div>
+                <div class="right-form" class="table-of-form-people">
+
+                    <input type="text" placeholder="" class="right-input-4">
+                    <input type="text" placeholder="" class="right-input-5">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="index.js"></script>
+</body>
+<!--<img class="heart" id="the-main-heart" src="./src/heart-pack/the-main-heart.png" alt="" />
+        <img class="heart" id="pill-standart-type" src="./src/heart-pack/pill-standart-type.png" alt="" /> -->
+
+</html>

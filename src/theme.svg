@@ -1,0 +1,20 @@
+<svg id="Фон" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="800" viewBox="0 0 1440 800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1.714" y1="2.082" x2="0.184" y2="0.175" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4792e1"/>
+      <stop offset="0.347" stop-color="#4174b3"/>
+      <stop offset="1" stop-color="#363b5d"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-1" width="1440" height="800"/>
+  <path id="Triangle" class="cls-2" d="M1071,0V596H0Z" transform="translate(364 202)"/>
+</svg>
