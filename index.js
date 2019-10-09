@@ -12,6 +12,7 @@ searchButton.onclick = function() {
 }
 closeSearch.onclick = () => {
     search.style.display = "none";
+    background.style.opacity = '1';
 }
 
 
@@ -26,19 +27,125 @@ btn.onclick = function() {
 span.onclick = function() {
     modal.style.display = "none";
 }
+let background = document.getElementsByClassName("wrapper-background")[0];
+const hiddenBank = document.getElementById("card-background-hidden");
+const formSecond = document.getElementById("table-second");
+const form = document.getElementById("table-first");
+const buttonYur = document.getElementById("second-type-of-human");
+const buttonFiz = document.getElementById("first-type-of-human");
 
-const componentPay2 = document.getElementById("table-second");
-const componentPay = document.getElementById("table-first");
-const click2 = document.getElementById("second-type-of-human");
-const click = document.getElementById("first-type-of-human");
-click2.onclick = function() {
-    componentPay.style.display = "none";
-    componentPay2.style.display = "flex";
-    click.onclick = function() {
-        componentPay.style.display = "flex";
-        componentPay2.style.display = "none";
+console.log(hiddenBank)
+
+buttonYur.onclick = function() {
+    form.style.display = "none";
+    formSecond.style.display = "flex";
+    buttonYur.style.backgroundColor = "#363b5d";
+    buttonFiz.style.backgroundColor = "#ffffff";
+    buttonFiz.style.color = "#000000";
+    hiddenBank.style.display = "flex";
+    buttonFiz.onclick = function() {
+        form.style.display = "flex";
+        formSecond.style.display = "none";
+        buttonYur.style.backgroundColor = "#ffffff";
+        buttonFiz.style.backgroundColor = "#363b5d"
+        buttonFiz.style.color = "#ffffff"
+        hiddenBank.style.display = "none"
     }
 }
+
+
+
+let searchInput = document.getElementById("search-long")
+let resultSearch = document.getElementById("search-result");
+searchInput.onkeydown = function() {
+    resultSearch.style.display = "block";
+}
+var active = document.getElementsByClassName("background-color-color");
+var imgBackground = document.getElementsByClassName("img-background");
+var cardBackground = document.getElementsByClassName("card-background")
+var color = ["#9c5d9a", "#fff"];
+var colors = ["#c5d5e6", "#9c5d9a"]
+    /*function changeColor() {
+        var p = 0;
+        for (let i = 0; i < imgBackground.length; i++) {
+            imgBackground[i].addEventListener("click", function() {
+                p = p < color.length ? ++p : 0;
+                this.style.backgroundColor = color[p];
+                console.log("ебать работае")
+            })
+        }
+    }
+    changeColor()
+    const hiddenBank = document.getElementsByClassName("card-background-hidden");
+hiddenBank.style.display = "flex";
+hiddenBank.style.display = "none"
+    */
+
+
+/*function changeColar() {
+    for (let i = 0; i < imgBackground.length; i++) {
+        imgBackground[i].onclick = function() {
+            this.style.backgroundColor = color[Math.floor(color.length * Math.random())];
+
+        }
+    }
+}
+changeColar()
+*/
+
+
+var boom = true;
+var bool = true;
+
+function myFunction() {
+    for (let i = 0; i < imgBackground.length; i++) {
+        imgBackground[i].onclick = function() {
+            (bool) ? this.style.backgroundColor = color[0]: this.style.backgroundColor = color[1];
+            bool = !bool;
+        }
+    }
+}
+myFunction()
+
+function myFunctionCard() {
+    for (let i = 0; i < cardBackground.length; i++) {
+        cardBackground[i].onclick = function() {
+            (boom) ? this.style.backgroundColor = colors[1]: this.style.backgroundColor = colors[0];
+            boom = !boom;
+        }
+    }
+}
+myFunctionCard()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -46,7 +153,7 @@ click2.onclick = function() {
 
 /*
 Реализация табов через модальные окна
-
+"#9c5d9a";
 const modalSecond = document.getElementById("modal-2");
 const btnSecond = document.getElementById("second-type-of-human");
 const spanSecond = document.getElementsByClassName("close-2")[0];
@@ -67,4 +174,4 @@ fizOsoba.onclick = function() {
 
 //Логика происходит так: с помощью нажатия на "search-button" переменна searchBlock в який знаходиться клас "search long" появляється в html документе
 //Логика 2 происходит при нажатии на "search-long" серч лонг пропадає і появляється знову класс "серчбаттон"
-// Доработати по джс: записати крестик в поле для того, шоб прі нажатії на нього все пропадало
+// Доработати по джс: записати крестик в поле для того, шоб прі нажатії на нього все пропадало */

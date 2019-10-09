@@ -7,33 +7,47 @@
 </head>
 
 <body>
-    <!-- Контейнер для бэкграунда, что существует на сайте  -->
     <div class="wrapper-background">
     </div>
     <div id="search-form-wrapper">
         <div id="search-form">
             <input type="text" placeholder="Пошук" id="search-long">
+            <div id="close-search">
+                <img src="./src/heart-pack/Shape Copy.svg" alt="" />
+            </div>
         </div>
-        <div id="close-search">
-            <img src="./src/heart-pack/Shape Copy.svg" alt="" />
-        </div>
-        <div id="search-form-suggestion">
-            <div class="search-form-main-suggestion">
-                <!-- <div class="element-suggestion"> <a href="projects.html">Проекти</a></div>-->
-                <!--  <div class="element-suggestion"><a href="archieve.html">Архів </a> </div>-->
+        <div id="search-result">
+            <div class="search-result-block">
+                <div class="result-block-first">
+                    <p> Проекти </p>
+                    <div class="first-block">
+                        <p class="h6">Діти</p>
+                        <p>Для операції на сердце маленькому хлопчику, необхідно зібрати гроші на ліки</p>
+                        <p>Збираємо гроші на лікування п’ятирічного Василя, який став жертвою ДТП </p>
+                    </div>
+                    <div class="first-block">
+                        <p class="h6">Війна</p>
+                        <p>Необхідно зібрати ліки для поранених бійців із зони АТО </p>
+                    </div>
+                </div>
+                <div class="result-block-second">
+                    <p>Архів</p>
+                    <div class="second-block">
+                        <p class="h6">Діти</p>
+                        <p>Необхідно купити ліки для дитячого будинку в місті Київ</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Контейнер для всего остального, что существует на сайте  -->
-
     <!-- Контейнер для обхвата всей шапки -->
-    <div id="wrapper-header">
+    <header class="header">
         <!-- Блок Логотип -->
         <div class="logo">
             <a href="./index.html"><img src="./src/logo.svg" alt="" /></a>
         </div>
         <!-- Блок языков -->
-        <div class="language">
+        <div class="languages">
 
             <div class="lang">
                 <a>УКР</a>
@@ -48,7 +62,7 @@
         <!-- Панель навигации -->
         <div class="topbar">
             <div class="element"> <a href="projects.html">Проекти</a></div>
-            <div class="element" id="element-page"><a href="archieve.html">Архів </a> </div>
+            <div class="element" id="select-element"><a href="archieve.html">Архів </a> </div>
             <div class="element"><a href="contacts.html">Контакти</a></div>
             <div class="element" id="fast-help"> <a href="fast-help.html">Термінова допомога</a></div>
         </div>
@@ -58,33 +72,124 @@
         </div>
         <!-- Авторизация -->
         <div class="login">
-            <a href="#">Увійти</a>/
-            <a href="#">Зареєструватись</a>
+            <a href="#">Увійти</a>
+            <a href="#">/ Зареєструватись</a>
         </div>
-    </div>
+    </header>
+
     <div id="projects-names">
         <div id="project-name" class="test"><a href="#">Ійна</a></div>
         <div id="project-name" class="test"><a href="#">Екологія</a></div>
         <div id="project-name"><a href="#">Діти</a></div>
         <div id="project-name" class="test"><a href="#">Освіта</a></div>
     </div>
-    <div class="news-project">
-        <div class="news-project-first-block">
-            <div class="img-of-post"><img src="src/children-archieve.png" alt=""></div>
-            <div class="text-of-block">
-                <p class="date-of-post">07.05.2017</p>
-                <p class="main-phrase-of-post">Необхідна допомога дитячому будинку</p>
-                <p class="text-of-post">Перебуваючи у сиротинцях ці діти мають різного роду матеріальні та нематеріальні <br> потреби, якими зазвичай ніхто не займається. Ті, хто має займатися утриманням дитячих<br> будинків, опікою над дітьми часто забувають про свій обов’язок
-                    або ж отримують <br> недостатнє фінансування від держави. Тому вся надія цих діточок покладається на<br> небайдужих людей, волонтерів, благодійні фонди. </p>
-                <p class="entity-money-of-post">Зібрано 10000 із 25000</p>
+    <div id="type-of-helps">
+        <p>Види допомоги</p>
+        <img src="./src/type-of-helps.svg" alt="">
+    </div>
+    <div class="blocks-flex-help">
+        <div class="blocks-of-help">
+            <div class="blocks-of-help-img">
+                <img src="src/children-archieve.png" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
             </div>
-            <div class="logo-of-post">
-                <img src="src/heart-of-post.svg" alt="">
-                <img class="first-img" src="src/wallet-of-post.svg" alt="">
-                <img class="first-img" src="src/dress-of-post.svg" alt="">
-                <img class="first-img" src="src/heart-of-post.svg" alt="">
+            <div class="blocks-of-help-text">
+                <p class="date-of-post">07.05.2017</p>
+                <p class="main-phrase-of-post">Організація поїздки сиріт до дитячого табору у Болгарії</p>
+                <p class="text-of-post">
+                    Перебуваючи у сиротинцях ці діти мають різного роду матеріальні та нематеріальні потреби, якими зазвичай ніхто не займається. Ті, хто має займатися утриманням дитячих будинків, опікою над дітьми часто забувають про свій обов’язок або ж отримують недостатнє
+                    фінансування від держави. Тому вся надія цих діточок покладається на небайдужих людей, волонтерів, благодійні фонди. </p>
+                <p class="entity-money-of-post">Допомогли: Ім’я Фамілія, ВАТ “Фірма 1”, Ім’я Фамілія 4, ВАТ “Фірма 3” </p>
+            </div>
+
+            <div class="logo-of-post-img">
+                <div class="logo-text-img-block">
+                    <label>фінансова
+                            допомога</label>
+                    <label>матеріальна
+                        допомога</label>
+                </div>
+                <div class="logo-of-post">
+                    <img class="first-img" src="src/wallet-of-post.svg" alt="">
+
+                    <img class="first-img" src="src/dress-of-post.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="blocks-of-help">
+            <div class="blocks-of-help-img">
+                <img src="src/images-archieve/football.png" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="blocks-of-help-text-two">
+                <p class="date-of-post">04.01.2017</p>
+                <p class="main-phrase-of-post">Секція з футболу для дітей початкових класів</p>
+            </div>
+        </div>
+        <div class="blocks-of-help">
+            <div class="blocks-of-help-img">
+                <img src="src/images-archieve/children.png" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="blocks-of-help-text-two">
+                <p class="date-of-post">03.01.2017</p>
+                <p class="main-phrase-of-post">Адаптація дітей із зони АТО</p>
+            </div>
+        </div>
+        <div class="blocks-of-help">
+            <div class="blocks-of-help-img">
+                <img src="src/images-archieve/pills.png" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="blocks-of-help-text-two">
+                <p class="date-of-post">23.11.2016</p>
+                <p class="main-phrase-of-post">Необхідно купити ліки у дитячий будинок</p>
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
+    <div id="modal-for-fast-help" id="my-modal-fast-help">
+        <div id="modal-content-for-fast-help">
+            <span class="close-fast-help-modal">&times;</span>
+            <p class="type-of-helps-modal"> Види допомоги</p>
+            <div class="flex-img-modal">
+                <div class="img-flex-modal-first">
+                    <img src="./src/hand-modal-fast-help.svg" alt="">
+                </div>
+                <div class="text-of-img-modal">
+                    <p class="img-text-name-modal">Зробити</p>
+                    <p class="img-text-describe-modal">Натискайте цю кнопку, <br> якщо Ви хочете зробити, <br> наприклад: ремонт у<br> дитячому будинку,<br> складну операцію,<br> побудувати дитячий<br> майданчик або<br> побудувати житло <br> для переселенців і тд. <br> Ця кнопка, для <br>                        організацій, які можуть<br> взяти на себе <br> відповідальність за увесь проект. </p>
+                </div>
+                <div>
+                    <img src="./src/wallet-fast-modal.svg" alt="">
+                </div>
+                <div class="text-of-img-modal">
+                    <p class="img-text-name-modal">Фінансова допомога
+                    </p>
+                    <p class="img-text-describe-modal">Перераховуйте гроші тим, хто дійсно потребує цього. </p>
+                </div>
+                <div>
+                    <img src="./src/dress-modal-fast.svg" alt="">
+                </div>
+                <div class="text-of-img-modal">
+                    <p class="img-text-name-modal">Матеріальна допомога
+                    </p>
+                    <p class="img-text-describe-modal">
+                        Зберіть ліки, речі, їжу,<br>іграшки та інше, для тих, кому це необхідно.</p>
+                </div>
+                <div>
+                    <img src="./src/heart-modal-fast.svg" alt="">
+                </div>
+                <div class="text-of-img-modal">
+                    <p class="img-text-name-modal">Волонтерство</p>
+                    <p class="img-text-describe-modal">
+                        Допоможіть ділом або професійними навичками. <br>Підтримайте проекти своєю роботою. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="archieve.js"></script>
 </body>

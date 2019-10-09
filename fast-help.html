@@ -13,55 +13,73 @@
     <div id="search-form-wrapper">
         <div id="search-form">
             <input type="text" placeholder="Пошук" id="search-long">
+            <div id="close-search">
+                <img src="./src/heart-pack/Shape Copy.svg" alt="" />
+            </div>
         </div>
-        <div id="close-search">
-            <img src="./src/heart-pack/Shape Copy.svg" alt="" />
-        </div>
-        <div id="search-form-suggestion">
-            <div class="search-form-main-suggestion">
-                <!-- <div class="element-suggestion"> <a href="projects.html">Проекти</a></div>-->
-                <!--  <div class="element-suggestion"><a href="archieve.html">Архів </a> </div>-->
+        <div id="search-result">
+            <div class="search-result-block">
+                <div class="result-block-first">
+                    <p> Проекти </p>
+                    <div class="first-block">
+                        <p class="h6">Діти</p>
+                        <p>Для операції на сердце маленькому хлопчику, необхідно зібрати гроші на ліки</p>
+                        <p>Збираємо гроші на лікування п’ятирічного Василя, який став жертвою ДТП </p>
+                    </div>
+                    <div class="first-block">
+                        <p class="h6">Війна</p>
+                        <p>Необхідно зібрати ліки для поранених бійців із зони АТО </p>
+                    </div>
+                </div>
+                <div class="result-block-second">
+                    <p>Архів</p>
+                    <div class="second-block">
+                        <p class="h6">Діти</p>
+                        <p>Необхідно купити ліки для дитячого будинку в місті Київ</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Контейнер для всего остального, что существует на сайте  -->
-    <div class="wrapper-site">
-        <!-- Контейнер для обхвата всей шапки -->
-        <div id="wrapper-header">
-            <!-- Блок Логотип -->
-            <div class="logo">
-                <a href="./index.html"><img src="./src/logo-fast-help.svg" alt="" /></a>
-            </div>
-            <!-- Блок языков -->
-            <div class="language">
 
-                <div class="lang">
-                    <a>УКР</a>
-                </div>
-                <div class="lang">
-                    <a>РУС </a>
-                </div>
-                <div class="lang">
-                    <a>EN</a>
-                </div>
+
+
+    <!-- Контейнер для обхвата всей шапки -->
+    <header class="header">
+        <!-- Блок Логотип -->
+        <div class="logo">
+            <a href="./index.html"><img src="./src/logo-fast-help.svg" alt="" /></a>
+        </div>
+        <!-- Блок языков -->
+        <div class="languages">
+
+            <div class="lang">
+                <a>УКР</a>
             </div>
-            <!-- Панель навигации -->
-            <div class="topbar">
-                <div class="element"> <a href="projects.html">Проекти</a></div>
-                <div class="element"><a href="archieve.html">Архів </a> </div>
-                <div class="element"><a href="contacts.html">Контакти</a></div>
-                <div class="element" id="fast-help" id="element-page"> <a href="./fast-help.html">Термінова допомога</a></div>
+            <div class="lang">
+                <a>РУС </a>
             </div>
-            <!--Поиск -->
-            <div class="search">
-                <img id="search-button" src="./src/Search-button.svg" />
-            </div>
-            <!-- Авторизация -->
-            <div class="login">
-                <a href="#">Увійти</a>/
-                <a href="#">Зареєструватись</a>
+            <div class="lang">
+                <a>EN</a>
             </div>
         </div>
+        <!-- Панель навигации -->
+        <div class="topbar">
+            <div class="element"> <a href="projects.html">Проекти</a></div>
+            <div class="element"><a href="archieve.html">Архів </a> </div>
+            <div class="element"><a href="contacts.html">Контакти</a></div>
+            <div class="element" id="fast-help"> <a href="fast-help.html">Термінова допомога</a></div>
+        </div>
+        <!--Поиск -->
+        <div class="search">
+            <img id="search-button" src="./src/Search-button.svg" />
+        </div>
+        <!-- Авторизация -->
+        <div class="login">
+            <a href="#">Увійти</a>
+            <a href="#">/ Зареєструватись</a>
+        </div>
+    </header>
 
     </div>
     <div id="projects-names">
@@ -74,21 +92,41 @@
         <p>Види допомоги</p>
         <img src="./src/type-of-helps.svg" alt="">
     </div>
-    <div class="blocks-of-help">
-        <div class="blocks-of-help-img">
-            <img src="./src/fast-help-block-img-1.png" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+    <div class="blocks-flex-help">
+        <div class="blocks-of-help">
+            <div class="blocks-of-help-img">
+                <img src="./src/fast-help-block-img-1.png" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="blocks-of-help-text">
+                <p class="date-of-post">07.05.2017</p>
+                <p class="main-phrase-of-post">Операція дитині, яка постраждала в зоні АТО</p>
+                <p class="text-of-post">Необхідно терміново зробити операцію або зібрати 40 000 грн Василю, який був<br>поранений в зоні АТО. </p>
+                <p class="entity-money-of-post">Зібрано 10000 із 25000</p>
+            </div>
+            <div class="img-right-sidebar">
+                <img src="./src/hand-fast-help-page.svg" alt="">
+                <img src="./src/wallet-fast-help-page.png" alt="">
+            </div>
         </div>
-        <div class="blocks-of-help-text">
-            <p class="date-of-post">07.05.2017</p>
-            <p class="main-phrase-of-post">Операція дитині, яка постраждала в зоні АТО</p>
-            <p class="text-of-post">Необхідно терміново зробити операцію або зібрати 40 000 грн Василю, який був<br>поранений в зоні АТО. </p>
-            <p class="entity-money-of-post">Зібрано 10000 із 25000</p>
+        <div class="blocks-of-help ">
+            <div class="blocks-of-help-img ">
+                <img src="src/fast-help/image-2.png " alt=" ">
+            </div>
+            <div class="blocks-of-help-text-two">
+                <p class="date-of-post ">03.05.2017</p>
+                <p class="main-phrase-of-post ">Ремонт опалення у дитячому будинку</p>
+            </div>
         </div>
-        <div class="img-right-sidebar">
-            <img src="./src/hand-fast-help-page.svg" alt="">
-            <img src="./src/wallet-fast-help-page.png" alt="">
+        <div class="blocks-of-help ">
+            <div class="blocks-of-help-img ">
+                <img src="src/fast-help/image-2.png " alt=" ">
+            </div>
+            <div class="blocks-of-help-text-two">
+                <p class="date-of-post ">03.05.2017</p>
+                <p class="main-phrase-of-post ">Ремонт опалення у дитячому будинку</p>
+            </div>
         </div>
     </div>
     <div id="modal-for-fast-help" id="my-modal-fast-help">
@@ -96,7 +134,7 @@
             <span class="close-fast-help-modal">&times;</span>
             <p class="type-of-helps-modal"> Види допомоги</p>
             <div class="flex-img-modal">
-                <div>
+                <div class="img-flex-modal-first">
                     <img src="./src/hand-modal-fast-help.svg" alt="">
                 </div>
                 <div class="text-of-img-modal">
@@ -132,5 +170,5 @@
         </div>
     </div>
 
-    <script src="indexJs-forFast-help.js"></script>
+    <script src="fast-help.js"></script>
 </body>

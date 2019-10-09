@@ -44,14 +44,10 @@
     top: 0;
     left: 0;
     z-index: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     clip-path: polygon(100% 0, 100% 29%, 20% 100%, 0 100%, 0 0);
     position: absolute;
-}
-
-.wrapper-site {
-    z-index: 1;
 }
 
 body {
@@ -74,6 +70,7 @@ body {
 
 .logo {
     position: relative;
+    cursor: pointer;
 }
 
 .languages {
@@ -93,6 +90,7 @@ body {
     font-size: 14;
     margin-right: 12px;
     color: #C5D5E6;
+    cursor: pointer;
 }
 
 .topbar {
@@ -127,6 +125,7 @@ body {
     color: white;
     word-spacing: 10px;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .search {
@@ -195,6 +194,14 @@ body {
     float: right;
     width: 62px;
     padding: 0;
+}
+
+#close-search:hover {
+    cursor: pointer;
+}
+
+#search-form-suggestion {
+    clear: both;
 }
 
 
@@ -275,8 +282,904 @@ body {
     display: inline-flex;
 }
 
+#text-slogan-button-help-now a {
+    opacity: 0.8;
+    list-style-type: none;
+    text-decoration: none;
+    color: #C5D5E6;
+    font-family: 'Geometria-ExtraBold';
+    font-size: 14px;
+    z-index: 1;
+    font-weight: 200;
+}
+
+.wrapper-button-class {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px 10px rgba(229, 54, 86, 0.2), 0 0 7px 2px rgba(157, 94, 154, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+    word-spacing: 10px;
+    white-space: nowrap;
+    margin-left: 80px;
+    margin-right: 15px;
+    z-index: 2;
+}
+
+.adding-to-project {
+    position: relative;
+    display: flex;
+    clear: both;
+    font-family: "Gilroy-Light";
+    font-size: 18px;
+    font-weight: 300;
+    color: #C5D5E6;
+    margin-top: 40px;
+}
+
+.adding-to-project-string {
+    float: left;
+    font-family: "Geometria-Medium";
+    font-size: 18px;
+    font-weight: 500;
+    color: #C5D5E6;
+}
+
+.plus {
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.string-adding-to-project {
+    opacity: 0.6;
+    font-family: "Gilroy-Light";
+    font-weight: 300;
+    color: white;
+}
+
+.footer-page {
+    float: left;
+    display: flex;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.text-footer-page {
+    color: #c5d5e6;
+    font-family: "Geometria-Medium";
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 3px;
+}
+
+
+/* ----------  Heart ---------- */
+
+.images-footer-page img {
+    margin-left: 17px;
+}
+
+.hearts {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    top: 120px;
+    right: 50px;
+}
+
+#all-png {
+    transform: translate(10px, -12px) rotate(6deg);
+}
+
+
+/* ---------- !!!!! Search ---------- */
+
+#message-image {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
 
 /* ---------- !!!!! Main Content ---------- */
+
+
+/* ----------  Modal Window ---------- */
+
+#my-modal {
+    align-content: center;
+}
+
+#modal {
+    display: none;
+    position: absolute;
+    width: 1200px;
+    height: 100%;
+    top: 50;
+    left: 30;
+    bottom: 30;
+    overflow: 0;
+    z-index: 2;
+}
+
+#modal-content {
+    background-color: #fefefe;
+    margin: 5%, auto;
+    border-radius: 15px;
+    border: solid 1px rgba(197, 213, 230, 0.5);
+    align-content: center;
+    justify-content: center;
+    bottom: 30;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 86px;
+    cursor: pointer;
+}
+
+
+/* ---------- !!!!! Modal Window ---------- */
+
+
+/* ----------   Content Modal Window ---------- */
+
+.main-phrase {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    line-height: 80px;
+    color: #363b5d;
+    font-family: "Geometria";
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.main-phrase p {
+    margin-bottom: 0px;
+}
+
+.form-type-of {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+}
+
+.type-of-human {
+    width: 116px;
+    height: 40px;
+    font-family: "Geometria";
+    font-size: 14px;
+    outline: none;
+}
+
+
+/* ----------  Buttons Modal Window ---------- */
+
+#first-type-of-human {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #363b5d;
+    background-color: #363b5d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#second-type-of-human {
+    border-radius: 0 5px 5px 0px;
+    border: 1px solid #363b5d;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* ---------- !!!!! Buttons Modal Window---------- */
+
+
+/* ---------- Fiz table---------- */
+
+#table-first {
+    display: flex;
+    justify-content: center;
+}
+
+.left-form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.right-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.input-1 {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.input-2 {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.input-3 {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.input-4 {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.input-5 {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.first-stirng-of-form {
+    display: flex;
+}
+
+.right-input-1 {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.second-stirng-of-right-form {
+    display: flex;
+}
+
+.right-input-2 {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.right-input-3 {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.right-input-4 {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.right-input-5 {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.text-under-main-phrase {
+    height: 22px;
+    color: #363b5d;
+    font-family: "Gilroy Light";
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.4;
+    text-align: center;
+}
+
+.type-of-help {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.type-of-help-element {
+    display: flex;
+}
+
+.type-of-help-element p {
+    float: right;
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.img-background {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    border: 2px solid #c5d5e6;
+    display: flex;
+    justify-content: center;
+}
+
+.background-color-color {
+    background-color: "#9c5d9a";
+}
+
+.img-background img {
+    align-items: center;
+}
+
+.int {
+    margin-left: 20px
+}
+
+.type-of-pay {
+    border: 1px solid #c5d5e6;
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.left-type-of-help {
+    margin: 3px;
+}
+
+.left-type-of-help img {
+    margin: 10px;
+}
+
+.type-of-pay-text {
+    margin-left: 10px;
+}
+
+.right-type-of-help {
+    margin-bottom: 10px;
+}
+
+.right-type-of-help img {
+    margin-top: 5px;
+}
+
+.button-help {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+.child-button-help-class a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.child-button-help-class {
+    width: 300px;
+    height: 60px;
+    box-shadow: 0 0 15px 5px rgba(229, 54, 86, 0.4);
+    border-radius: 10px;
+    background-image: linear-gradient(47deg, #e53656 0%, #6082d8 100%);
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ---------- !!!!! Fiz Table ---------- */
+
+
+/* ----------  Yur Table ---------- */
+
+#modal-2 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: 0;
+    z-index: 2;
+}
+
+#modal-content-2 {
+    background-color: #fefefe;
+    margin: 5% auto;
+    border-radius: 15px;
+    border: solid 1px rgba(197, 213, 230, 0.5);
+}
+
+.close-2 {
+    color: #aaa;
+    float: right;
+    font-size: 82px;
+    cursor: pointer;
+}
+
+#first-first-type-of-human {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #363b5d;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#second-second-type-of-human {
+    border-radius: 0 5px 5px 0px;
+    border: 1px solid #363b5d;
+    background-color: #363b5d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#table-second {
+    display: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.left-form-of-second-table {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.half-stirng-of-second-form {
+    display: flex;
+}
+
+.left-input-1-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.left-input-2-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.left-input-3-of-second-form {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.left-input-4-of-second-form {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.left-input-5-of-second-form {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.left-input-6-of-second-form {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.left-input-7-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.left-input-8-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.left-input-9-of-second-form {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.right-input-1-of-second-form {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.right-input-2-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.right-input-3-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.right-input-4-of-second-form {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+}
+
+.right-input-5-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.right-input-6-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.right-input-7-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.right-input-8-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.right-input-9-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.right-input-10-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.right-input-11-of-second-form {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 0.2);
+    margin-right: 18px;
+}
+
+.left-form-of-second-table {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.right-form-of-second-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.test-p {
+    position: absolute;
+    width: 26px;
+    height: 17px;
+    color: #939aa3;
+    font-family: "Geometria";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    color: #939aa3;
+    font-family: "Geometria";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.flex-label {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.label-2 {
+    margin-left: 193px;
+}
+
+.label-2-yur-form {
+    margin-left: 72px;
+}
+
+.label-3-yur-form {
+    margin-left: 180px;
+}
+
+.label-4-yur-form {
+    margin-left: 178;
+}
+
+.label-5-yur-form {
+    margin-left: 195px;
+}
+
+.label-6-yur-form {
+    margin-left: 87px;
+}
+
+.first-line-left-type-of-help {
+    margin: 0px;
+    display: flex;
+}
+
+.second-type-left-type-of-help {
+    display: flex;
+    margin-top: 10px;
+}
+
+.card-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 170px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: #c5d5e6;
+    margin-left: 10px;
+}
+
+#card-background-hidden {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 170px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: #c5d5e6;
+    margin-left: 10px;
+}
+
+.privat-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.privat {
+    color: #ffffff;
+    font-family: "Gilroy Extra Bold";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.privat-describe {
+    color: #ffffff;
+    font-family: "Gilroy Light";
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.terminals {
+    color: #ffffff;
+    font-family: "Gilroy Light";
+    font-size: 12px;
+    font-weight: 300;
+    margin: auto;
+}
+
+.webmoney {
+    margin: auto;
+    color: #ffffff;
+    font-family: "Gilroy Light";
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.paypal {
+    margin: auto;
+    color: #ffffff;
+    font-family: "Gilroy Light";
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.bank {
+    margin: auto;
+    color: #ffffff;
+    font-family: "Gilroy Light";
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.сard-wrapper {
+    width: 375px;
+    height: 188px;
+    border-radius: 15px;
+    background-color: #c5d5e6;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-inputs {
+    display: flex;
+    justify-content: center;
+}
+
+.numbers-input {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f3f7fa;
+    border: none;
+    margin: 5px;
+    outline: none;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-inputs-down {
+    display: flex;
+    justify-content: space-around;
+}
+
+.numbers-input-down {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f3f7fa;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.card-name-number {
+    color: #ffffff;
+    font-family: "Geometria";
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+    margin-left: 25px;
+}
+
+.card-name-number-special {
+    margin-left: 25px;
+    color: #ffffff;
+    font-family: "Geometria";
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.first-object-numbet .card-name-number {
+    margin-left: 25px;
+}
+
+
+/* ---------- !!!!! Yur Table ---------- */
+
+
+/* ---------- !!!!! Content Modal Window ---------- */
+
+
+/* ----------   Modal Result of Search ---------- */
+
+#search-result {
+    margin-top: 10px;
+    position: absolute;
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+    top: 60;
+    overflow: hidden;
+    z-index: 15;
+}
+
+.search-result-block {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-family: "Geometria";
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.result-block-first {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.result-block-second {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.first-block {
+    color: #ffffff;
+    font-family: "Gilroy Light";
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.second-block {
+    color: #ffffff;
+    font-family: "Gilroy Light";
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 50px;
+}
+
+.h6 {
+    color: #ffffff;
+    font-family: "Geometria";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* ---------- !!!!!  Modal Result of Search---------- */
 
 @media screen and (max-width: 1200px) {
     .wrapper-site {
@@ -364,663 +1267,10 @@ body {
     }
 }
 
-.hearts {
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    top: 120px;
-    right: 50px;
-}
-
-#text-slogan-button-help-now a {
-    opacity: 0.8;
-    list-style-type: none;
-    text-decoration: none;
-    color: #C5D5E6;
-    font-family: 'Geometria-ExtraBold';
-    font-size: 14px;
-    z-index: 1;
-    font-weight: 200;
-}
-
-.wrapper-button-class {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 15px 10px rgba(229, 54, 86, 0.2), 0 0 7px 2px rgba(157, 94, 154, 0.2);
-    border-radius: 10px;
-    text-align: center;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 5px;
-    word-spacing: 10px;
-    white-space: nowrap;
-    margin-left: 80px;
-    margin-right: 15px;
-    z-index: 2;
-}
-
-.adding-to-project {
-    position: relative;
-    display: flex;
-    clear: both;
-    font-family: "Gilroy-Light";
-    font-size: 18px;
-    font-weight: 300;
-    color: #C5D5E6;
-    margin-top: 40px;
-}
-
-.adding-to-project-string {
-    float: left;
-    font-family: "Geometria-Medium";
-    font-size: 18px;
-    font-weight: 500;
-    color: #C5D5E6;
-}
-
-.plus {
-    width: 17px;
-    height: 17px;
-    margin-left: 10px;
-    padding: 0px;
-}
-
-.string-adding-to-project {
-    opacity: 0.6;
-    font-family: "Gilroy-Light";
-    font-weight: 300;
-    color: white;
-}
-
-.footer-page {
-    float: left;
-    display: flex;
-    margin-top: 80px;
-    margin-left: 40px;
-}
-
-.text-footer-page {
-    color: #c5d5e6;
-    font-family: "Geometria-Medium";
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.images-footer-page img {
-    margin-left: 23px;
-    margin-top: 13px;
-}
-
-#the-main-heart {
-    width: 267px;
-    height: 208px;
-    transform: translate(140px, -145px) rotate(8deg);
-}
-
-#pill-standart-type {
-    width: 87px;
-    height: 61px;
-    transform: translate(140px, -145px) rotate(-10deg);
-    border-radius: 19px;
-}
-
-#all-png {
-    transform: translate(10px, 0px) rotate(6deg);
-}
-
-#message-image {
-    position: absolute;
-    bottom: 0;
-    right: 20px;
-}
-
-input {
-    padding: 0 20px;
-    color: rgba(46, 63, 105, 0.5);
+input[type="text"] {
+    outline: none;
+    border: none;
+    padding: 0 10px;
     font-family: "Geometria-ExtraBold";
-    font-size: 18px;
-    font-weight: 700;
-}
-
-#close-search:hover {
-    cursor: pointer;
-}
-
-#search-form-suggestion {
-    clear: both;
-}
-
-#modal {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: 0;
-    z-index: 2;
-}
-
-#modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    border-radius: 15px;
-    border: solid 1px rgba(197, 213, 230, 0.5);
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-}
-
-.main-phrase {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    line-height: 80px;
-    color: #363b5d;
-    font-family: "Geometria";
-    font-size: 64px;
-    font-weight: 700;
-}
-
-.main-phrase p {
-    margin-bottom: 0px;
-}
-
-.form-type-of {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    border-radius: 5px 0 0 5px;
-}
-
-.type-of-human {
-    width: 116px;
-    height: 40px;
-    font-family: "Geometria";
-    font-size: 14px;
-}
-
-#first-type-of-human {
-    border-radius: 5px 0 0 5px;
-    border: 1px solid #363b5d;
-    background-color: #363b5d;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-#second-type-of-human {
-    border-radius: 0 5px 5px 0px;
-    border: 1px solid #363b5d;
-    background-color: #ffffff;
-    cursor: pointer;
-}
-
-#table-first {
-    display: flex;
-    justify-content: center;
-}
-
-.left-form {
-    display: flex;
-    flex-direction: column;
-    margin-right: 100px;
-}
-
-.right-form {
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-}
-
-.input-1 {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.input-2 {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.input-3 {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.input-4 {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.input-5 {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.first-stirng-of-form {
-    display: flex;
-}
-
-.right-input-1 {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.second-stirng-of-right-form {
-    display: flex;
-}
-
-.right-input-2 {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.right-input-3 {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.right-input-4 {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.right-input-5 {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.text-under-main-phrase {
-    height: 22px;
-    color: #363b5d;
-    font-family: "Gilroy Light";
-    font-size: 18px;
-    font-weight: 300;
-    opacity: 0.4;
-    text-align: center;
-}
-
-.type-of-help {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.type-of-help-element p {
-    float: right;
-    font-family: "Geometria";
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.type-of-pay {
-    border: 1px solid #c5d5e6;
-    display: flex;
-    margin: 10px;
-    justify-content: space-around;
-}
-
-.left-type-of-help img {
-    margin: 10px;
-}
-
-.right-type-of-help {
-    margin-top: 15px;
-    margin-left: 100px;
-}
-
-.button-help {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 75px;
-}
-
-.child-button-help-class a {
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    margin-top: 15px;
-    font-family: "Geometria";
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.child-button-help-class {
-    width: 300px;
-    height: 60px;
-    box-shadow: 0 0 15px 5px rgba(229, 54, 86, 0.4);
-    border-radius: 10px;
-    background-image: linear-gradient(47deg, #e53656 0%, #6082d8 100%);
-    display: flex;
-    justify-content: center;
-}
-
-#modal-2 {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: 0;
-    z-index: 2;
-}
-
-#modal-content-2 {
-    background-color: #fefefe;
-    margin: 5% auto;
-    border-radius: 15px;
-    border: solid 1px rgba(197, 213, 230, 0.5);
-}
-
-.close-2 {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-}
-
-#first-first-type-of-human {
-    border-radius: 5px 0 0 5px;
-    border: 1px solid #363b5d;
-    background-color: #ffffff;
-    cursor: pointer;
-}
-
-#second-second-type-of-human {
-    border-radius: 0 5px 5px 0px;
-    border: 1px solid #363b5d;
-    background-color: #363b5d;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-
-/* Новый блок начинается прямо отсюда */
-
-#table-second {
-    display: none;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.left-form-of-second-table {
-    display: flex;
-    flex-direction: column;
-    margin-right: 100px;
-}
-
-.half-stirng-of-second-form {
-    display: flex;
-}
-
-.left-input-1-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.left-input-2-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.left-input-3-of-second-form {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.left-input-4-of-second-form {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.left-input-5-of-second-form {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.left-input-6-of-second-form {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.left-input-7-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.left-input-8-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.left-input-9-of-second-form {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.right-input-1-of-second-form {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.right-input-2-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.right-input-3-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.right-input-4-of-second-form {
-    width: 420px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-}
-
-.right-input-5-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.right-input-6-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.right-input-7-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.right-input-8-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.right-input-9-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.right-input-10-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.right-input-11-of-second-form {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #c5d5e6;
-    opacity: 0.2;
-    margin-right: 18px;
-}
-
-.left-form-of-second-table {
-    display: flex;
-    flex-direction: column;
-    margin-right: 100px;
-}
-
-.right-form-of-second-table {
-    display: flex;
-    flex-direction: column;
-}
-
-.test-p {
-    position: absolute;
-    width: 26px;
-    height: 17px;
-    color: #939aa3;
-    font-family: "Geometria";
-    font-size: 14px;
-    font-weight: 500;
-}
-
-label {
-    display: block;
-    margin-top: 20px;
-    color: #939aa3;
-    font-family: "Geometria";
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.flex-label {
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.label-2 {
-    margin-left: 193px;
-}
-
-.label-2-yur-form {
-    margin-left: 72px;
-}
-
-.label-3-yur-form {
-    margin-left: 180px;
-}
-
-.label-4-yur-form {
-    margin-left: 178;
-}
-
-.label-5-yur-form {
-    margin-left: 195px;
-}
-
-.label-6-yur-form {
-    margin-left: 87px;
+    color: black;
 }

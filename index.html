@@ -17,10 +17,27 @@
                 <img src="./src/heart-pack/Shape Copy.svg" alt="" />
             </div>
         </div>
-        <div id="search-form-suggestion">
-            <div class="search-form-main-suggestion">
-                <!-- <div class="element-suggestion"> <a href="projects.html">Проекти</a></div>-->
-                <!--  <div class="element-suggestion"><a href="archieve.html">Архів </a> </div>-->
+        <div id="search-result">
+            <div class="search-result-block">
+                <div class="result-block-first">
+                    <p> Проекти </p>
+                    <div class="first-block">
+                        <p class="h6">Діти</p>
+                        <p>Для операції на сердце маленькому хлопчику, необхідно зібрати гроші на ліки</p>
+                        <p>Збираємо гроші на лікування п’ятирічного Василя, який став жертвою ДТП </p>
+                    </div>
+                    <div class="first-block">
+                        <p class="h6">Війна</p>
+                        <p>Необхідно зібрати ліки для поранених бійців із зони АТО </p>
+                    </div>
+                </div>
+                <div class="result-block-second">
+                    <p>Архів</p>
+                    <div class="second-block">
+                        <p class="h6">Діти</p>
+                        <p>Необхідно купити ліки для дитячого будинку в місті Київ</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -248,37 +265,102 @@
             <p class="text-under-main-phrase"> Ви можете змінити вид допомоги</p>
             <div class="type-of-help">
                 <div class="type-of-help-element">
-                    <img src="src/type-of-help-hand.svg" alt="">
+                    <div class="img-background">
+                        <img src="src/pack-type-of-help/hand.svg" alt="">
+                    </div>
                     <p class="int">Зробити</p>
+
                 </div>
                 <div class="type-of-help-element">
-                    <img src="src/type-of-help-wallet.svg" alt="">
+                    <div class="img-background">
+                        <img class="wallet" src="src/pack-type-of-help/wallet.svg" alt="">
+                    </div>
                     <p class="int">Фінансова <br> Допомога</p>
                 </div>
                 <div class="type-of-help-element">
-                    <img src="src/type-of-help-stuf.svg" alt="">
+                    <div class="img-background">
+                        <img src="src/pack-type-of-help/dress.svg" alt="">
+                    </div>
                     <p class="int">Матеріальна <br> допомога</p>
+
                 </div>
                 <div class="type-of-help-element">
-                    <img src="src/type-of-help-heart.svg" alt="">
+                    <div class="img-background">
+                        <img src="src/pack-type-of-help/heart.svg" alt="">
+                    </div>
                     <p class="int">Волонтерство</p>
                 </div>
             </div>
             <div class="type-of-pay">
                 <div class="left-type-of-help">
+                    <label class="type-of-pay-text"> Спосіб оплати </label>
                     <div class="first-line-left-type-of-help">
-                        <img src="src/card-1.svg" alt="">
-                        <img src="src/card-2-active.svg" alt="">
-                        <img src="src/card-3.svg" alt="">
+                        <div class="card-background">
+                            <img src="src/cards/master-card.svg" alt="">
+                        </div>
+                        <div class="card-background">
+                            <div class="privat-flex">
+                                <p class="privat">Приват24</p>
+                                <p class="privat-describe">Приват24</p>
+                            </div>
+                        </div>
+                        <div class="card-background">
+                            <img src="src/cards/terminal-of-ukraine.svg" alt="">
+                            <p class="terminals">Термінали України</p>
+                        </div>
                     </div>
                     <div class="second-type-left-type-of-help">
-                        <img src="src/card-4.svg" alt="">
-                        <img src="src/card-5.svg" alt="">
-                        <img src="src/card-6.png" alt="">
+                        <div class="card-background">
+                            <img src="src/cards/webnoney.svg" alt="">
+                            <p class="webmoney">WebMoney</p>
+                        </div>
+                        <div class="card-background">
+                            <img src="src/cards/PayPal.svg" alt="">
+                            <p class="paypal">PayPal</p>
+                        </div>
+                        <div id="card-background-hidden">
+                            <img src="src/cards/bank.svg" alt="">
+                            <p class="bank">Банківський Переказ</p>
+                        </div>
                     </div>
                 </div>
+
                 <div class="right-type-of-help">
-                    <img src="src/huge-card.svg" alt="">
+                    <label>Введіть наступні данні </label>
+                    <div class="сard-wrapper">
+                        <div class="card-up-line">
+                            <div class="first-object-number">
+                                <p class="card-name-number"> Номер карти </p>
+                            </div>
+                            <div class="card-inputs">
+
+                                <input type="tel" name="" maxlength="4" class="numbers-input">
+
+
+                                <input type="tel" name="" maxlength="4" class="numbers-input">
+
+
+                                <input type="tel" name="" maxlength="4" class="numbers-input">
+
+                                <input type="tel" name="" maxlength="4" class="numbers-input">
+
+                            </div>
+                        </div>
+                        <div class="card-inputs-down">
+                            <div class="second-object">
+                                <div class="first-object">
+                                    <p class="card-name-number-special"> Термін дії </p>
+                                </div>
+                                <input type="text" name="" maxlength="5" class="numbers-input-down">
+                            </div>
+                            <div class="third-oject">
+                                <div class="first-object">
+                                    <p class="card-name-number">CVC/CVV </p>
+                                </div>
+                                <input type="password" name="" maxlength="3" class="numbers-input-down">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="button-help">
@@ -321,7 +403,6 @@
     </div> -->
     <script src="index.js"></script>
 </body>
-<!--<img class="heart" id="the-main-heart" src="./src/heart-pack/the-main-heart.png" alt="" />
-        <img class="heart" id="pill-standart-type" src="./src/heart-pack/pill-standart-type.png" alt="" /> -->
+
 
 </html>
