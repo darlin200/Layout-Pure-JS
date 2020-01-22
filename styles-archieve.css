@@ -142,7 +142,6 @@ body {
 .search {
     position: relative;
     display: flex;
-    margin-left: 60px;
 }
 
 #search-button:hover {
@@ -152,7 +151,6 @@ body {
 .login {
     position: relative;
     display: flex;
-    margin-left: 80px;
 }
 
 .login a {
@@ -189,6 +187,7 @@ body {
     display: flex;
     border-radius: 10px;
     background-color: rgba(197, 213, 230, 0.5);
+    backdrop-filter: blur(15px);
 }
 
 #search-form input[type="text"] {
@@ -197,7 +196,10 @@ body {
     background-color: transparent;
     border: 0;
     outline: none;
-    color: rgba(46, 63, 105, 0.5);
+    color: #fff;
+    font-size: 40px;
+    font-family: "Geometria-Medium";
+    text-align: center;
 }
 
 #close-search {
@@ -413,10 +415,15 @@ input {
     top: 60;
     overflow: hidden;
     z-index: 15;
+    /* z-index: 2; */
+    backdrop-filter: blur(10px);
+    /* color: #fff; */
+    /* font-size: 30px; */
+    border-radius: 10px;
 }
 
 .search-result-block {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(197, 213, 230, 0.5);
     display: flex;
     flex-direction: column;
     border: 0;
@@ -425,6 +432,12 @@ input {
     font-family: "Geometria";
     font-size: 24px;
     font-weight: 500;
+}
+
+.search-result-block a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
 }
 
 .result-block-first {
@@ -437,6 +450,12 @@ input {
     display: flex;
     flex-direction: row;
     margin-left: 20px;
+}
+
+.search-position-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .first-block {
@@ -463,7 +482,7 @@ input {
 }
 
 
-/* ---------- !!!!!  Modal Result of Search---------- */
+/* ---------- !!!!! Modal Result of Search ---------- */
 
 
 /* ---------- Modal Type of Helps ------------*/
@@ -476,6 +495,7 @@ input {
     top: 0;
     left: 0;
     overflow: 0;
+    backdrop-filter: blur(2px);
     z-index: 3;
 }
 

@@ -7,7 +7,7 @@ let search = document.getElementById("search-form-wrapper");
 let closeSearch = document.getElementById("close-search");
 console.log(search);
 
-searchButton.onclick = function() {
+searchButton.onclick = function () {
     search.style.display = "flex";
 }
 closeSearch.onclick = () => {
@@ -19,36 +19,59 @@ closeSearch.onclick = () => {
 
 const modal = document.getElementById("modal");
 const btn = document.getElementById("text-slogan-button-help-now");
-const span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[ 0 ];
 
-btn.onclick = function() {
+btn.onclick = function () {
     modal.style.display = "block";
 }
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
 }
-let background = document.getElementsByClassName("wrapper-background")[0];
+const myButton = document.getElementsByClassName("type-of-human")
+let background = document.getElementsByClassName("wrapper-background")[ 0 ];
 const hiddenBank = document.getElementById("card-background-hidden");
 const formSecond = document.getElementById("table-second");
 const form = document.getElementById("table-first");
 const buttonYur = document.getElementById("second-type-of-human");
 const buttonFiz = document.getElementById("first-type-of-human");
-
+let wallet = document.getElementsByClassName("wallet")
 console.log(hiddenBank)
+const buttonYur2 = document.getElementById("second-type-of-human-2");
+const buttonFiz2 = document.getElementById("first-type-of-human-2");
 
-buttonYur.onclick = function() {
+buttonYur.onclick = function () {
     form.style.display = "none";
     formSecond.style.display = "flex";
     buttonYur.style.backgroundColor = "#363b5d";
     buttonFiz.style.backgroundColor = "#ffffff";
     buttonFiz.style.color = "#000000";
+    buttonYur.style.color = "#fff";
     hiddenBank.style.display = "flex";
-    buttonFiz.onclick = function() {
+    buttonFiz.onclick = function () {
         form.style.display = "flex";
         formSecond.style.display = "none";
         buttonYur.style.backgroundColor = "#ffffff";
         buttonFiz.style.backgroundColor = "#363b5d"
         buttonFiz.style.color = "#ffffff"
+        buttonYur.style.color = "#000000"
+        hiddenBank.style.display = "none"
+    }
+}
+buttonYur2.onclick = function () {
+    form.style.display = "none";
+    formSecond.style.display = "flex";
+    buttonYur2.style.backgroundColor = "#363b5d";
+    buttonFiz2.style.backgroundColor = "#ffffff";
+    buttonFiz2.style.color = "#000000";
+    buttonYur2.style.color = "#fff";
+    hiddenBank.style.display = "flex";
+    buttonFiz2.onclick = function () {
+        form.style.display = "flex";
+        formSecond.style.display = "none";
+        buttonYur2.style.backgroundColor = "#ffffff";
+        buttonFiz2.style.backgroundColor = "#363b5d"
+        buttonFiz2.style.color = "#ffffff"
+        buttonYur2.style.color = "#000000"
         hiddenBank.style.display = "none"
     }
 }
@@ -57,68 +80,93 @@ buttonYur.onclick = function() {
 
 let searchInput = document.getElementById("search-long")
 let resultSearch = document.getElementById("search-result");
-searchInput.onkeydown = function() {
+searchInput.onkeydown = function () {
     resultSearch.style.display = "block";
 }
-var active = document.getElementsByClassName("background-color-color");
-var imgBackground = document.getElementsByClassName("img-background");
+var active = document.getElementsByClassName("img-background.active");
+
 var cardBackground = document.getElementsByClassName("card-background")
-var color = ["#9c5d9a", "#fff"];
-var colors = ["#c5d5e6", "#9c5d9a"]
-    /*function changeColor() {
-        var p = 0;
-        for (let i = 0; i < imgBackground.length; i++) {
-            imgBackground[i].addEventListener("click", function() {
-                p = p < color.length ? ++p : 0;
-                this.style.backgroundColor = color[p];
-                console.log("ебать работае")
-            })
-        }
-    }
-    changeColor()
-    const hiddenBank = document.getElementsByClassName("card-background-hidden");
-hiddenBank.style.display = "flex";
-hiddenBank.style.display = "none"
-    */
+var cardSuggestion = document.getElementById("card-suggestion");
+var cards = document.getElementsByClassName("type-of-pay")[ 0 ];
+var color = [ "#9c5d9a","#fff" ];
+var colors = [ "#c5d5e6","#9c5d9a" ]
 
 
-/*function changeColar() {
-    for (let i = 0; i < imgBackground.length; i++) {
-        imgBackground[i].onclick = function() {
-            this.style.backgroundColor = color[Math.floor(color.length * Math.random())];
 
-        }
+var tab; // заголовок вкладки
+var tabContent; // блок содержащий контент вкладки
+var png = document.getElementsByClassName('img-test-shit')
+window.onload = function () {
+    tabContent = document.getElementsByClassName('tabContent');
+    tab = document.getElementsByClassName('img-background');
+    hideTabsContent();
+}
+
+function myTest () {
+    document.querySelectorAll('.img-background').forEach(function (element) {
+        element.addEventListener('click',event => {
+            if (event.target.className !== "tabContent") {
+                let imgBackground = event.currentTarget;
+                let contentToShow = event.currentTarget.getElementsByClassName('tabContent')[ 0 ];
+
+                showTabsContent(imgBackground,contentToShow);
+            }
+        });
+    });
+}
+myTest()
+
+function hideTabsContent () {
+    for (var i = 0; i < tabContent.length; i++) {
+        tabContent[ i ].classList.remove('show');
+        tabContent[ i ].classList.add("hide");
+        tab[ i ].classList.remove('active');
     }
 }
-changeColar()
-*/
+
+function showTabsContent (container,contentToShow) {
+    //hide previous tabs
+    hideTabsContent();
+    //show new tab
+    container.classList.add('active');
+    contentToShow.classList.remove('hide');
+    contentToShow.classList.add('show');
+}
 
 
 var boom = true;
-var bool = true;
 
-function myFunction() {
-    for (let i = 0; i < imgBackground.length; i++) {
-        imgBackground[i].onclick = function() {
-            (bool) ? this.style.backgroundColor = color[0]: this.style.backgroundColor = color[1];
-            bool = !bool;
-        }
-    }
-}
-myFunction()
-
-function myFunctionCard() {
+function myFunctionCard () {
     for (let i = 0; i < cardBackground.length; i++) {
-        cardBackground[i].onclick = function() {
-            (boom) ? this.style.backgroundColor = colors[1]: this.style.backgroundColor = colors[0];
+        cardBackground[ i ].onclick = function () {
+            (boom) ? this.style.backgroundColor = colors[ 1 ] : this.style.backgroundColor = colors[ 0 ];
             boom = !boom;
         }
     }
 }
+
+
 myFunctionCard()
+let menu = document.getElementsByClassName('menuTest')[ 0 ];
+let buttonMenu = document.getElementsByClassName('menu-btn')[ 0 ];
+let content = document.getElementsByClassName("content")[ 0 ]
+buttonMenu.addEventListener("click",function (e) {
+    e.preventDefault();
+    this.classList.toggle('menu-btn_active');
+    content.classList.toggle("content_active");
+    menu.classList.toggle("menuTest_active")
+});
 
 
+function myFunction () {
+    for (let i = 0; i < myButton.length; i++) {
+        myButton[ i ].onclick = function () {
+            this.classList.toggle("active_button")
 
+        }
+
+    }
+}
 
 
 
@@ -174,4 +222,4 @@ fizOsoba.onclick = function() {
 
 //Логика происходит так: с помощью нажатия на "search-button" переменна searchBlock в який знаходиться клас "search long" появляється в html документе
 //Логика 2 происходит при нажатии на "search-long" серч лонг пропадає і появляється знову класс "серчбаттон"
-// Доработати по джс: записати крестик в поле для того, шоб прі нажатії на нього все пропадало */
+//trt

@@ -53,12 +53,11 @@
 body {
     padding: 0px;
     margin: 0px;
+    /* ---------- Header ----------  */
 }
 
-
-/* ---------- Header ----------  */
-
 .header {
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
     position: relative;
     display: flex;
     height: 72px;
@@ -131,7 +130,6 @@ body {
 .search {
     position: relative;
     display: flex;
-    margin-left: 60px;
 }
 
 #search-button:hover {
@@ -139,9 +137,7 @@ body {
 }
 
 .login {
-    position: relative;
     display: flex;
-    margin-left: 80px;
 }
 
 .login a {
@@ -178,6 +174,7 @@ body {
     display: flex;
     border-radius: 10px;
     background-color: rgba(197, 213, 230, 0.5);
+    backdrop-filter: blur(15px);
 }
 
 #search-form input[type="text"] {
@@ -186,55 +183,51 @@ body {
     background-color: transparent;
     border: 0;
     outline: none;
-    color: rgba(46, 63, 105, 0.5);
+    color: #fff;
+    font-size: 40px;
+    font-family: "Geometria-Medium";
+    text-align: center;
 }
 
+
+}
 #close-search {
     position: relative;
     float: right;
     width: 62px;
     padding: 0;
 }
-
 #close-search:hover {
     cursor: pointer;
 }
-
 #search-form-suggestion {
     clear: both;
 }
 
-
 /* ---------- !!!!! Search ---------- */
 
-
 /* ----------  Main Content ---------- */
-
 .main-content-wrapper {
     position: relative;
     height: calc(100% - 93px);
     overflow: hidden;
 }
-
 .main-text p {
     font-family: 'Geometria-ExtraBold';
     font-size: 64;
     color: white;
     margin: 0px;
 }
-
 #text-wrapper {
     display: flex;
     margin-left: 100px;
     align-items: center;
 }
-
 .about-text {
     display: inline-flex;
     margin-top: 20px;
     margin-left: 20px;
 }
-
 .about-text a {
     white-space: nowrap;
     opacity: 0.7;
@@ -242,26 +235,22 @@ body {
     color: #C5D5E6;
     font-family: 'Geometria-Medium';
 }
-
 .next-button {
     width: 15px;
     height: 15px;
     margin-left: 12px;
     padding: 3px;
 }
-
 .text-slogan {
     clear: both;
     margin-left: 100px;
     margin-top: 50px;
 }
-
 .text-under-white-line {
     color: white;
     font-family: 'Gilroy-Light';
     font-size: 18;
 }
-
 .text-under-white-line-under {
     color: #C5D5E6;
     font-family: 'Geometria-Medium';
@@ -269,7 +258,6 @@ body {
     opacity: 0.7;
     float: left;
 }
-
 .next-button-two {
     width: 15px;
     height: 15px;
@@ -277,11 +265,9 @@ body {
     padding: 2px;
     margin-top: 16px;
 }
-
 .wrapper-text-underline {
     display: inline-flex;
 }
-
 #text-slogan-button-help-now a {
     opacity: 0.8;
     list-style-type: none;
@@ -292,7 +278,6 @@ body {
     z-index: 1;
     font-weight: 200;
 }
-
 .wrapper-button-class {
     position: relative;
     background-color: rgba(0, 0, 0, 0.2);
@@ -310,7 +295,6 @@ body {
     margin-right: 15px;
     z-index: 2;
 }
-
 .adding-to-project {
     position: relative;
     display: flex;
@@ -321,7 +305,6 @@ body {
     color: #C5D5E6;
     margin-top: 40px;
 }
-
 .adding-to-project-string {
     float: left;
     font-family: "Geometria-Medium";
@@ -329,28 +312,23 @@ body {
     font-weight: 500;
     color: #C5D5E6;
 }
-
 .plus {
     width: 17px;
     height: 17px;
     margin-left: 10px;
     padding: 0px;
 }
-
 .string-adding-to-project {
     opacity: 0.6;
-    font-family: "Gilroy-Light";
+    font-family: "Geometria-Medium";
     font-weight: 300;
     color: white;
 }
-
 .footer-page {
     float: left;
     display: flex;
     margin-top: 80px;
-    margin-left: 40px;
 }
-
 .text-footer-page {
     color: #c5d5e6;
     font-family: "Geometria-Medium";
@@ -359,13 +337,10 @@ body {
     margin-top: 3px;
 }
 
-
 /* ----------  Heart ---------- */
-
 .images-footer-page img {
     margin-left: 17px;
 }
-
 .hearts {
     position: absolute;
     z-index: 1;
@@ -373,42 +348,66 @@ body {
     top: 120px;
     right: 50px;
 }
-
 #all-png {
     transform: translate(10px, -12px) rotate(6deg);
 }
 
-
 /* ---------- !!!!! Search ---------- */
-
 #message-image {
     position: absolute;
     bottom: 0;
     right: 20px;
 }
 
-
 /* ---------- !!!!! Main Content ---------- */
 
-
 /* ----------  Modal Window ---------- */
-
-#my-modal {
+.my-modal {
     align-content: center;
 }
-
+.content {}
+.content_active {
+    transform: translateX(100%);
+}
+.menuTest {
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 30%;
+    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: 0.5s;
+    transform: translateX(-110%);
+    position: absolute;
+    width: 1200px;
+    height: 100%;
+    top: 50;
+    backdrop-filter: blur(2px);
+    left: 20;
+    bottom: 30;
+    overflow: 0;
+    z-index: 2;
+}
+.menuTest_active {
+    transform: translateX(3%);
+}
 #modal {
     display: none;
     position: absolute;
     width: 1200px;
     height: 100%;
-    top: 50;
-    left: 30;
+    top: 20;
+    backdrop-filter: blur(2px);
     bottom: 30;
     overflow: 0;
     z-index: 2;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-
 #modal-content {
     background-color: #fefefe;
     margin: 5%, auto;
@@ -417,21 +416,27 @@ body {
     align-content: center;
     justify-content: center;
     bottom: 30;
+    /* z-index: 2; */
+    
+    backdrop-filter: blur(4px);
+    /* color: #fff; */
+    /* font-size: 30px; */
+    /* padding: 50px; */
+    
+    border-radius: 10px;
 }
-
 .close {
     color: #aaa;
     float: right;
     font-size: 86px;
+    line-height: 60px;
+    margin: 10px 10px 0 0;
     cursor: pointer;
 }
 
-
 /* ---------- !!!!! Modal Window ---------- */
 
-
 /* ----------   Content Modal Window ---------- */
-
 .main-phrase {
     display: flex;
     position: relative;
@@ -442,18 +447,21 @@ body {
     font-size: 64px;
     font-weight: 700;
 }
-
 .main-phrase p {
     margin-bottom: 0px;
 }
-
 .form-type-of {
     display: flex;
     position: relative;
     justify-content: center;
     border-radius: 5px 0 0 5px;
 }
-
+.form-type-of-2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+}
 .type-of-human {
     width: 116px;
     height: 40px;
@@ -461,10 +469,15 @@ body {
     font-size: 14px;
     outline: none;
 }
-
+.type-of-human-2 {
+    width: 116px;
+    height: 40px;
+    font-family: "Geometria";
+    font-size: 14px;
+    outline: none;
+}
 
 /* ----------  Buttons Modal Window ---------- */
-
 #first-type-of-human {
     border-radius: 5px 0 0 5px;
     border: 1px solid #363b5d;
@@ -472,37 +485,43 @@ body {
     color: #ffffff;
     cursor: pointer;
 }
-
 #second-type-of-human {
     border-radius: 0 5px 5px 0px;
     border: 1px solid #363b5d;
     background-color: #ffffff;
     cursor: pointer;
 }
-
+#first-type-of-human-2 {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #363b5d;
+    background-color: #363b5d;
+    color: #ffffff;
+    cursor: pointer;
+}
+#second-type-of-human-2 {
+    border-radius: 0 5px 5px 0px;
+    border: 1px solid #363b5d;
+    background-color: #ffffff;
+    cursor: pointer;
+}
 
 /* ---------- !!!!! Buttons Modal Window---------- */
 
-
 /* ---------- Fiz table---------- */
-
 #table-first {
     display: flex;
     justify-content: center;
 }
-
 .left-form {
     display: flex;
     flex-direction: column;
     margin-right: 100px;
 }
-
 .right-form {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
 }
-
 .input-1 {
     width: 200px;
     height: 40px;
@@ -510,50 +529,42 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .input-2 {
     width: 200px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .input-3 {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .input-4 {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .input-5 {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .first-stirng-of-form {
     display: flex;
 }
-
 .right-input-1 {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .second-stirng-of-right-form {
     display: flex;
 }
-
 .right-input-2 {
     width: 200px;
     height: 40px;
@@ -561,21 +572,18 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .right-input-3 {
     width: 200px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .right-input-4 {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .right-input-5 {
     width: 200px;
     height: 40px;
@@ -583,7 +591,6 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .text-under-main-phrase {
     height: 22px;
     color: #363b5d;
@@ -593,24 +600,20 @@ body {
     opacity: 0.4;
     text-align: center;
 }
-
 .type-of-help {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
 .type-of-help-element {
     display: flex;
 }
-
 .type-of-help-element p {
     float: right;
     font-family: "Geometria";
     font-size: 18px;
     font-weight: 700;
 }
-
 .img-background {
     width: 80px;
     height: 80px;
@@ -618,54 +621,98 @@ body {
     border: 2px solid #c5d5e6;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
-
+.img-background.active {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    border: 2px solid #c5d5e6;
+    display: flex;
+    justify-content: center;
+    background-color: #9c5d9a;
+}
+.img-background.passive {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    border: 2px solid #c5d5e6;
+    display: flex;
+    justify-content: center;
+    background-color: #9c5d9a;
+}
+.type-of-help.whiteborder {}
 .background-color-color {
     background-color: "#9c5d9a";
 }
-
 .img-background img {
     align-items: center;
+    position: absolute;
+    margin-left: 20px;
 }
-
 .int {
     margin-left: 20px
 }
-
+.classForGovno {
+    display: flex;
+    flex-direction: column;
+}
 .type-of-pay {
     border: 1px solid #c5d5e6;
     display: flex;
     margin: 10px;
     justify-content: space-around;
+    margin-top: 25px;
 }
-
+.border-man {
+    display: flex;
+    justify-content: space-around;
+}
+.tabContent::after {
+    display: block;
+    content: ' ';
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: #c5d5e6;
+    border-radius: 5px 0 100% 0;
+    /* position: absolute; */
+    /* bottom: -35px; */
+    /* left: 25px; */
+    
+    transform: scaleX(.7) rotate(45deg);
+    margin: auto;
+    margin-top: 135px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
 .left-type-of-help {
     margin: 3px;
 }
-
 .left-type-of-help img {
     margin: 10px;
 }
-
 .type-of-pay-text {
     margin-left: 10px;
 }
-
 .right-type-of-help {
     margin-bottom: 10px;
 }
-
 .right-type-of-help img {
     margin-top: 5px;
 }
-
 .button-help {
     display: flex;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 75px;
 }
-
 .child-button-help-class a {
     list-style-type: none;
     text-decoration: none;
@@ -675,7 +722,6 @@ body {
     font-size: 18px;
     font-weight: 700;
 }
-
 .child-button-help-class {
     width: 300px;
     height: 60px;
@@ -686,12 +732,9 @@ body {
     justify-content: center;
 }
 
-
 /* ---------- !!!!! Fiz Table ---------- */
 
-
 /* ----------  Yur Table ---------- */
-
 #modal-2 {
     display: none;
     position: absolute;
@@ -702,28 +745,24 @@ body {
     overflow: 0;
     z-index: 2;
 }
-
 #modal-content-2 {
     background-color: #fefefe;
     margin: 5% auto;
     border-radius: 15px;
     border: solid 1px rgba(197, 213, 230, 0.5);
 }
-
 .close-2 {
     color: #aaa;
     float: right;
     font-size: 82px;
     cursor: pointer;
 }
-
 #first-first-type-of-human {
     border-radius: 5px 0 0 5px;
     border: 1px solid #363b5d;
     background-color: #ffffff;
     cursor: pointer;
 }
-
 #second-second-type-of-human {
     border-radius: 0 5px 5px 0px;
     border: 1px solid #363b5d;
@@ -731,23 +770,19 @@ body {
     color: #ffffff;
     cursor: pointer;
 }
-
 #table-second {
     display: none;
     justify-content: center;
     margin-top: 20px;
 }
-
 .left-form-of-second-table {
     display: flex;
     flex-direction: column;
     margin-right: 100px;
 }
-
 .half-stirng-of-second-form {
     display: flex;
 }
-
 .left-input-1-of-second-form {
     width: 200px;
     height: 40px;
@@ -755,7 +790,6 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .left-input-2-of-second-form {
     width: 200px;
     height: 40px;
@@ -763,35 +797,30 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .left-input-3-of-second-form {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .left-input-4-of-second-form {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .left-input-5-of-second-form {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .left-input-6-of-second-form {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .left-input-7-of-second-form {
     width: 200px;
     height: 40px;
@@ -799,7 +828,6 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .left-input-8-of-second-form {
     width: 200px;
     height: 40px;
@@ -807,21 +835,18 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .left-input-9-of-second-form {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .right-input-1-of-second-form {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .right-input-2-of-second-form {
     width: 200px;
     height: 40px;
@@ -829,7 +854,6 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .right-input-3-of-second-form {
     width: 200px;
     height: 40px;
@@ -837,14 +861,12 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .right-input-4-of-second-form {
     width: 420px;
     height: 40px;
     border-radius: 5px;
     background-color: rgba(197, 213, 230, 0.2);
 }
-
 .right-input-5-of-second-form {
     width: 200px;
     height: 40px;
@@ -852,7 +874,6 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .right-input-6-of-second-form {
     width: 200px;
     height: 40px;
@@ -860,7 +881,6 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .right-input-7-of-second-form {
     width: 200px;
     height: 40px;
@@ -868,7 +888,6 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .right-input-8-of-second-form {
     width: 200px;
     height: 40px;
@@ -876,7 +895,6 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .right-input-9-of-second-form {
     width: 200px;
     height: 40px;
@@ -884,7 +902,6 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .right-input-10-of-second-form {
     width: 200px;
     height: 40px;
@@ -892,7 +909,6 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .right-input-11-of-second-form {
     width: 200px;
     height: 40px;
@@ -900,18 +916,15 @@ body {
     background-color: rgba(197, 213, 230, 0.2);
     margin-right: 18px;
 }
-
 .left-form-of-second-table {
     display: flex;
     flex-direction: column;
     margin-right: 100px;
 }
-
 .right-form-of-second-table {
     display: flex;
     flex-direction: column;
 }
-
 .test-p {
     position: absolute;
     width: 26px;
@@ -921,7 +934,6 @@ body {
     font-size: 14px;
     font-weight: 500;
 }
-
 label {
     display: block;
     margin-top: 20px;
@@ -930,47 +942,37 @@ label {
     font-size: 14px;
     font-weight: 500;
 }
-
 .flex-label {
     position: relative;
     display: flex;
     justify-content: flex-start;
 }
-
 .label-2 {
     margin-left: 193px;
 }
-
 .label-2-yur-form {
     margin-left: 72px;
 }
-
 .label-3-yur-form {
     margin-left: 180px;
 }
-
 .label-4-yur-form {
     margin-left: 178;
 }
-
 .label-5-yur-form {
     margin-left: 195px;
 }
-
 .label-6-yur-form {
     margin-left: 87px;
 }
-
 .first-line-left-type-of-help {
     margin: 0px;
     display: flex;
 }
-
 .second-type-left-type-of-help {
     display: flex;
     margin-top: 10px;
 }
-
 .card-background {
     display: flex;
     flex-direction: column;
@@ -981,7 +983,6 @@ label {
     background-color: #c5d5e6;
     margin-left: 10px;
 }
-
 #card-background-hidden {
     display: none;
     flex-direction: column;
@@ -992,21 +993,18 @@ label {
     background-color: #c5d5e6;
     margin-left: 10px;
 }
-
 .privat-flex {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: auto;
 }
-
 .privat {
     color: #ffffff;
     font-family: "Gilroy Extra Bold";
     font-size: 18px;
     font-weight: 700;
 }
-
 .privat-describe {
     color: #ffffff;
     font-family: "Gilroy Light";
@@ -1014,7 +1012,6 @@ label {
     font-weight: 300;
     margin-left: 10px;
 }
-
 .terminals {
     color: #ffffff;
     font-family: "Gilroy Light";
@@ -1022,7 +1019,6 @@ label {
     font-weight: 300;
     margin: auto;
 }
-
 .webmoney {
     margin: auto;
     color: #ffffff;
@@ -1030,7 +1026,6 @@ label {
     font-size: 12px;
     font-weight: 300;
 }
-
 .paypal {
     margin: auto;
     color: #ffffff;
@@ -1038,7 +1033,6 @@ label {
     font-size: 12px;
     font-weight: 300;
 }
-
 .bank {
     margin: auto;
     color: #ffffff;
@@ -1046,7 +1040,6 @@ label {
     font-size: 12px;
     font-weight: 300;
 }
-
 .сard-wrapper {
     width: 375px;
     height: 188px;
@@ -1056,12 +1049,10 @@ label {
     display: flex;
     flex-direction: column;
 }
-
 .card-inputs {
     display: flex;
     justify-content: center;
 }
-
 .numbers-input {
     width: 80px;
     height: 40px;
@@ -1073,12 +1064,10 @@ label {
     padding: 15px;
     text-align: center;
 }
-
 .card-inputs-down {
     display: flex;
     justify-content: space-around;
 }
-
 .numbers-input-down {
     width: 130px;
     height: 40px;
@@ -1088,7 +1077,6 @@ label {
     outline: none;
     text-align: center;
 }
-
 .card-name-number {
     color: #ffffff;
     font-family: "Geometria";
@@ -1097,7 +1085,6 @@ label {
     margin: 0px;
     margin-left: 25px;
 }
-
 .card-name-number-special {
     margin-left: 25px;
     color: #ffffff;
@@ -1106,20 +1093,15 @@ label {
     font-weight: 500;
     margin: 0px;
 }
-
 .first-object-numbet .card-name-number {
     margin-left: 25px;
 }
 
-
 /* ---------- !!!!! Yur Table ---------- */
-
 
 /* ---------- !!!!! Content Modal Window ---------- */
 
-
 /* ----------   Modal Result of Search ---------- */
-
 #search-result {
     margin-top: 10px;
     position: absolute;
@@ -1129,10 +1111,11 @@ label {
     top: 60;
     overflow: hidden;
     z-index: 15;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
 }
-
 .search-result-block {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(197, 213, 230, 0.5);
     display: flex;
     flex-direction: column;
     border: 0;
@@ -1142,35 +1125,40 @@ label {
     font-size: 24px;
     font-weight: 500;
 }
-
+.search-result-block a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
 .result-block-first {
     display: flex;
     flex-direction: row;
     margin-left: 20px;
 }
-
 .result-block-second {
     display: flex;
     flex-direction: row;
     margin-left: 20px;
 }
-
+.search-position-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .first-block {
     color: #ffffff;
-    font-family: "Gilroy Light";
+    font-family: "Gilroy-Light";
     font-size: 14px;
     font-weight: 300;
     margin-left: 20px;
 }
-
 .second-block {
     color: #ffffff;
-    font-family: "Gilroy Light";
+    font-family: "Gilroy-Light";
     font-size: 14px;
     font-weight: 300;
     margin-left: 50px;
 }
-
 .h6 {
     color: #ffffff;
     font-family: "Geometria";
@@ -1178,9 +1166,53 @@ label {
     font-weight: 500;
 }
 
+/* ---------- !!!!! Modal Result of Search ---------- */
 
-/* ---------- !!!!!  Modal Result of Search---------- */
+/* ----------   Menu-btn ---------- */
+.menu-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+    display: block;
+    transition: 0.2s;
+}
+.menu-btn span::before {
+    transform: translateY(-5px);
+}
+.menu-btn span::after {
+    transform: translateY(5px);
+}
+.menu-btn_active span {
+    height: 0;
+}
+.menu-btn_active span:before {
+    transform: rotate(45deg);
+}
+.menu-btn_active span:after {
+    transform: rotate(-45deg);
+}
 
+/* ---------- !!!!! Menu btn ---------- */
 @media screen and (max-width: 1200px) {
     .wrapper-site {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#363a5d+0,373b5e+66,35395c+66,373b5e+66,353b5d+71,373d5f+73,353b5d+74,383e60+74,363c60+74,363c60+78,383e62+79,383e62+85,353f62+86,373f63+92,363f60+92,373f64+94,374165+100 */
@@ -1199,7 +1231,6 @@ label {
         clip-path: polygon(0 0, 100% 0, 100% 88%, 0 88%);
     }
 }
-
 @media screen and (max-width: 800px) {
     .topbar {
         justify-content: space-between;
@@ -1208,7 +1239,6 @@ label {
         margin-left: 10px;
     }
 }
-
 @media screen and (max-width: 800px) {
     .language {
         margin: 10px;
@@ -1216,7 +1246,6 @@ label {
         padding: 0px;
     }
 }
-
 @media screen and (max-width: 800px) {
     .logo {
         float: left;
@@ -1224,7 +1253,6 @@ label {
         margin-left: 10px;
     }
 }
-
 @media screen and (max-width: 1024px) {
     .search {
         float: left;
@@ -1232,14 +1260,12 @@ label {
         margin-left: 10px;
     }
 }
-
 @media screen and (max-width: 800px) {
     .element a {
         margin-left: 5px;
         margin-right: 10px;
     }
 }
-
 @media screen and (max-width: 1024px) {
     .login {
         clear: both;
@@ -1247,7 +1273,6 @@ label {
         white-space: nowrap;
     }
 }
-
 @media screen and (max-width: 900px) {
     .wrapper-site {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#363a5d+0,373b5e+66,35395c+66,373b5e+66,353b5d+71,373d5f+73,353b5d+74,383e60+74,363c60+74,363c60+78,383e62+79,383e62+85,353f62+86,373f63+92,363f60+92,373f64+94,374165+100 */
@@ -1266,11 +1291,14 @@ label {
         clip-path: polygon(0 0, 100% 0, 100% 88%, 0 88%);
     }
 }
-
 input[type="text"] {
     outline: none;
     border: none;
     padding: 0 10px;
     font-family: "Geometria-ExtraBold";
     color: black;
+}
+.active_button {
+    background-color: #363b5d;
+    color: white;
 }
